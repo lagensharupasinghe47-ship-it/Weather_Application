@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="Stylesheet" href="Style.css">
+   
 </head>
 <body>
-    <h1>Weather Application</h1>
+<!-- header-->
+ <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="asset/imgs/logo.jpg" alt="Logo" width="60"  class="d-inline-block align-text-top">
+     <b> Weather of world</b>
+    </a>
+  </div>
+</nav>
+<div >
+    <video autoplay muted loop id="bg-video" >
+        <source src="asset/imgs/Deep Blue Sky - Clouds Timelapse - Free Footage - Full HD 1080p - cinetrove (1080p, h264).mp4" type="video/mp4">
+    </video>
+</div>
+<div id="searchbar">
+  <center>
+  <input type="text" class="search" placeholder="Enter The city" id="txtName">
+  <button class="btn btn-outline-dark" value="Search" id="btnSearch">Search</button>
+  <p id="weatherResult"></p>
+  </center>
+</div>
+<div class="image-container1">
+<img src="asset/imgs/sunny.png" width="150px">
+
+<!-- <div class="image-container2"> -->
+<img src="asset/imgs/misty.png" width="150px">
+<!-- </div> -->
+<!-- <div class="image-container3"> -->
+<img src="asset/imgs/foggy.png" width="150px">
+<!-- </div> -->
+<!-- <div class="image-container4"> -->
+  <img src="asset/imgs/rainShower.png" width="150px">
+  <!-- </div> -->
+</div>
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126752.42832428979!2d79.78616445!3d6.9270787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259633a76f7c5%3A0xdea3cdf01a2a7f25!2sColombo!5e0!3m2!1sen!2slk!4v1708967890123!5m2!1sen!2slk" 
+  width="1000" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+</iframe>
+
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="javaScript/app.js"></script>
+
 </body>
 </html>
